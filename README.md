@@ -1,6 +1,4 @@
 ## Angular-Material
-Angular Material Setup
-
 In this Tutorial, We will create a static website using Angular Materials framework.
 
 #### Objective:
@@ -9,8 +7,7 @@ This setup will be used in building more advance desktop, progressive web apps a
 Angular Material framework provide all necessary tools to develop comprehensive, modern UI components.
 Angular Material UI elements are very fast, consistent, small in size and provide a uniform look across web, mobile and desktop applications.
 
-#### Setup
-
+#### Setup: 
 https://material.angular.io/
 
 #### Step 1:
