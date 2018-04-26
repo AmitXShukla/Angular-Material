@@ -23,9 +23,7 @@
           </mat-panel-title>
         </mat-expansion-panel-header>
         <mat-list role="list">
-          <mat-list-item role="listitem">About me</mat-list-item>
-          <mat-list-item role="listitem">Contact</mat-list-item>
-          <mat-list-item role="listitem">Terms</mat-list-item>
+          <mat-list-item role="listitem"><button mat-menu-item routerLink="/aboutus">About me</button></mat-list-item>
         </mat-list>
       </mat-expansion-panel>
       <mat-divider></mat-divider>
@@ -63,7 +61,7 @@
     </mat-accordion>
   </mat-drawer>
   <div class="example-sidenav-content">
-    body text here
+    <router-outlet></router-outlet>
   </div>
 </mat-drawer-container>
 <footer></footer>

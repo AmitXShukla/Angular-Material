@@ -5,12 +5,14 @@ import { AppComponent } from './app.component';
 import { APP_ROUTES } from './shared/routes';
 import { ElishCustomMaterialModule } from './shared/custommaterial/custommaterial.module';
 import { FooterComponent } from './shared/footer/footer.component';
+import { AboutusComponent } from './aboutus/aboutus.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    FooterComponent
+    FooterComponent,
+    AboutusComponent
   ],
   imports: [
     BrowserModule,

@@ -12,12 +12,13 @@
   }
   
   .example-sidenav-content {
+    padding: 50px;
     display: flex;
     height: 80%;
-    align-items: center;
+    align-items: top;
     justify-content: center;
-    font-size: small;
-    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
   }
   
   .example-sidenav {
