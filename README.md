@@ -54,7 +54,7 @@ Some components (mat-slide-toggle, mat-slider, matTooltip) rely on HammerJS for 
 
 #### Step 6 (Optional): Add Material Icons
 If you want to use the mat-icon component with the official Material Design Icons, load the icon font in your index.html.
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"
 For more information on using Material Icons, check out the Material Icons Guide.
 Note that mat-icon supports any font or svg icons; using Material Icons is one of many options.
 
