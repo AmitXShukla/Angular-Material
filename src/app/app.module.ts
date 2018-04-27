@@ -6,13 +6,19 @@ import { APP_ROUTES } from './shared/routes';
 import { ElishCustomMaterialModule } from './shared/custommaterial/custommaterial.module';
 import { FooterComponent } from './shared/footer/footer.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
+import { BlogsComponent } from './blogs/blogs.component';
+import { VideosComponent } from './videos/videos.component';
+import { ProjectsComponent } from './projects/projects.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
-    AboutusComponent
+    AboutusComponent,
+    BlogsComponent,
+    VideosComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,
