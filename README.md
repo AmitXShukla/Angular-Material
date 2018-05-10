@@ -1,6 +1,6 @@
 <h2>https://amitxshukla.github.io</h2>
 
-<a href="https://www.youtube.com/watch?v=Tua9Cbw_YgU&list=PLp0TENYyY8lF1I4EgKLcwRvxy820BgWpd" target="_blank">[Click here for Video Tutorials !]</a>
+<a href="https://youtu.be/IGJQ3w4LMjw" target="_blank">[Click here for Video Tutorials !]</a>
 
 <h4> Objective: Angular Material - Static Website</h4>
 In this tutorial, we will be using Angular Material to build a static website.
