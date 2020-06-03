@@ -1,0 +1,107 @@
+<p>pro works!</p>
+<app-header imageUrl="business" pageTitle="Projects by Business"></app-header>
+  <mat-card>
+    <mat-card-actions>
+      <button mat-button color="primary" routerLink="/aboutus">Back</button>
+    </mat-card-actions>
+      <mat-card-content>
+        <mat-accordion>
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                    AI - Machine/Deep Learning
+                </mat-panel-title>
+                <mat-panel-description>
+                    Julia, Python
+                </mat-panel-description>
+              </mat-expansion-panel-header>
+              <mat-list-item *ngFor="let folder of ai">
+                <mat-icon mat-list-icon>folder</mat-icon>
+                <div mat-line *ngIf="folder.link"><a href="{{ folder.link }}" target="_blank">{{folder.name}}</a></div>
+                <div mat-line *ngIf="!folder.link">{{folder.name}} ***WIP</div>
+                <div mat-line> {{folder.updated | date}} </div>
+              </mat-list-item>
+            </mat-expansion-panel>
+            <mat-expansion-panel (opened)="panelOpenState = true"
+                                 (closed)="panelOpenState = false">
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                    Angular Firebase
+                </mat-panel-title>
+                <mat-panel-description>
+                  Live Apps
+                </mat-panel-description>
+              </mat-expansion-panel-header>
+              <mat-list-item *ngFor="let note of ngfirebase">
+                <mat-icon mat-list-icon>note</mat-icon>
+                <div mat-line><a href="{{ note.link }}" target="_blank">{{note.name}}</a></div>
+                <div mat-line> {{note.updated | date}} </div>
+              </mat-list-item>
+            </mat-expansion-panel>
+            <mat-expansion-panel (opened)="panelOpenState = true"
+                                 (closed)="panelOpenState = false">
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                    Angular MYSQL
+                </mat-panel-title>
+                <mat-panel-description>
+                  Live Apps
+                </mat-panel-description>
+              </mat-expansion-panel-header>
+              <mat-list-item *ngFor="let note of ngsql">
+                <mat-icon mat-list-icon>note</mat-icon>
+                <div mat-line><a href="{{ note.link }}" target="_blank">{{note.name}}</a></div>
+                <div mat-line> {{note.updated | date}} </div>
+              </mat-list-item>
+            </mat-expansion-panel>
+            <mat-expansion-panel (opened)="panelOpenState = true"
+                                 (closed)="panelOpenState = false">
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                    Angular MongoDB (MEAN)
+                </mat-panel-title>
+                <mat-panel-description>
+                  Live Apps
+                </mat-panel-description>
+              </mat-expansion-panel-header>
+              <mat-list-item *ngFor="let note of ngmongo">
+                <mat-icon mat-list-icon>note</mat-icon>
+                <div mat-line><a href="{{ note.link }}" target="_blank">{{note.name}}</a></div>
+                <div mat-line> {{note.updated | date}} </div>
+              </mat-list-item>
+            </mat-expansion-panel>
+            <mat-expansion-panel (opened)="panelOpenState = true"
+                                 (closed)="panelOpenState = false">
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                    Flutter
+                </mat-panel-title>
+                <mat-panel-description>
+                  Live Apps
+                </mat-panel-description>
+              </mat-expansion-panel-header>
+              <mat-list-item *ngFor="let note of flutter">
+                <mat-icon mat-list-icon>note</mat-icon>
+                <div mat-line><a href="{{ note.link }}" target="_blank">{{note.name}}</a></div>
+                <div mat-line> {{note.updated | date}} </div>
+              </mat-list-item>
+            </mat-expansion-panel>
+            <mat-expansion-panel (opened)="panelOpenState = true"
+                                 (closed)="panelOpenState = false">
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                    All
+                </mat-panel-title>
+                <mat-panel-description>
+                  Live Apps
+                </mat-panel-description>
+              </mat-expansion-panel-header>
+              <mat-list-item *ngFor="let note of all">
+                <mat-icon mat-list-icon>note</mat-icon>
+                <div mat-line><a href="{{ note.link }}" target="_blank">{{note.name}}</a></div>
+                <div mat-line> {{note.updated | date}} </div>
+              </mat-list-item>
+            </mat-expansion-panel>
+          </mat-accordion>        
+      </mat-card-content>
+  </mat-card>

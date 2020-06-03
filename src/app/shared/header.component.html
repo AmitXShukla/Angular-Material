@@ -1,0 +1,56 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <button mat-mini-fab color="warn" aria-label="Menu" [matMenuTriggerFor]="rootMenu">
+            <mat-icon>menu</mat-icon>
+          </button>
+        <span class="small-spacer"></span>
+        <mat-icon>{{ imageUrl }}</mat-icon>
+        <span class="small-spacer"></span>
+        <span matTooltip="About us">{{ pageTitle }}</span>
+        <span class="example-spacer"></span>
+        <img src="../assets/icons/favicon.ico" width="40" height="40" class="circle-link" [matMenuTriggerFor]="contactMenu">
+      </mat-toolbar-row>  
+  </mat-toolbar>
+  <mat-menu #rootMenu="matMenu">
+    <button mat-menu-item routerLink="/aboutus">
+      <mat-icon>dashboard</mat-icon>
+      <span>About us</span>
+    </button>
+    <mat-divider></mat-divider>
+    <button mat-menu-item routerLink="/technology">
+      <mat-icon>build</mat-icon>
+      <span>By Technology</span>
+    </button>
+    <mat-divider></mat-divider>
+    <button mat-menu-item routerLink="/business">
+      <mat-icon>business</mat-icon>
+      <span>By Business</span>
+    </button>
+    <mat-divider></mat-divider>
+    <button mat-menu-item routerLink="/pro">
+      <mat-icon>donut_small</mat-icon>
+      <span>Pro</span>
+    </button>
+  </mat-menu>
+  <mat-menu #contactMenu="matMenu">
+    <a title="FaceBook" href="https://www.facebook.com/elishconsulting" target="_blank" rel="noopener">
+        <mat-icon matTooltip="connect with FaceBook" class="circle-link example-icon-link" svgIcon="facebook">
+        </mat-icon>
+    </a>
+    <a title="GitHub" href="https://github.com/AmitXShukla" target="_blank" rel="noopener">
+        <mat-icon matTooltip="connect with GitHub" class="circle-link example-icon-link" svgIcon="github"></mat-icon>
+    </a>
+    <a title="LinkedIn" href="https://www.linkedin.com/in/elishconsulting/" target="_blank" rel="noopener">
+        <mat-icon matTooltip="connect with LinkedIn" class="circle-link example-icon-link" svgIcon="linkedin">
+        </mat-icon>
+    </a>
+    <a title="Twitter" href="https://twitter.com/ashuklax" target="_blank" rel="noopener">
+        <mat-icon matTooltip="connect with Twitter" class="circle-link example-icon-link" svgIcon="twitter"></mat-icon>
+    </a>
+    <a title="YouTube" href="https://youtube.com/amitshukla_ai" target="_blank" rel="noopener">
+      <mat-icon matTooltip="connect with YouTube" class="circle-link example-icon-link" svgIcon="youtube"></mat-icon>
+  </a>
+  <a title="Medium Blogs" href="https://medium.com/@Amit_Shukla" target="_blank" rel="noopener">
+    <mat-icon matTooltip="connect with Medium Blogs" class="circle-link example-icon-link" svgIcon="medium"></mat-icon>
+</a>
+  </mat-menu>
